@@ -1,4 +1,4 @@
-module github.com/gruntwork-io/terratest
+module github.com/darmach/terratest
 
 go 1.14
 
