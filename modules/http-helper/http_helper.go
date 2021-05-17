@@ -37,7 +37,7 @@ func HttpGetE(t testing.TestingT, url string, tlsConfig *tls.Config) (int, strin
 
 	client := http.Client{
 		// By default, Go does not impose a timeout, so an HTTP connection attempt can hang for a LONG time.
-		Timeout: 10 * time.Second,
+		Timeout: 30 * time.Second,
 		// Include the previously created transport config
 		Transport: tr,
 	}
